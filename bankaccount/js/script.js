@@ -24,7 +24,7 @@ const bankAccount = ownerName => {
             } else {
                 depositAmount = parseFloat(depositAmount);
                 if (isNaN(depositAmount)) {
-                    status = `Cannot process transaction.  Deposit amount must be a number.`;
+                    status = 'Cannot process transaction.  Deposit amount must be a number.';
                 } else {
                     balance += depositAmount;
                     status = `A deposit of $${depositAmount.toFixed(2)} has been processed.`;
